@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weighty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weighty Baby Weighty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRE-sc-oo0">
+                                <rect key="frame" x="16" y="28" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CRE-sc-oo0" secondAttribute="height" multiplier="343:44" id="OjS-PZ-CaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weighter" translatesAutoresizingMaskIntoConstraints="NO" id="guP-eg-WwA">
+                                <rect key="frame" x="16" y="114" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="guP-eg-WwA" secondAttribute="height" multiplier="1:1" id="V28-Nn-igo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZJ-DO-ebF">
+                                <rect key="frame" x="16" y="491" width="343" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QZJ-DO-ebF" secondAttribute="height" multiplier="343:61" id="CbE-YL-Meh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6d-wg-QvG">
+                                <rect key="frame" x="16" y="560" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j6d-wg-QvG" secondAttribute="height" multiplier="343:50" id="QVp-JU-iRg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="SetZero"/>
+                                <connections>
+                                    <action selector="setZeroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wy0-rU-Glg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j6d-wg-QvG" firstAttribute="top" secondItem="QZJ-DO-ebF" secondAttribute="bottom" constant="8" id="41U-kT-srX"/>
+                            <constraint firstItem="j6d-wg-QvG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="448-Vk-Mhj"/>
+                            <constraint firstItem="QZJ-DO-ebF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Sd-12-SsC"/>
+                            <constraint firstItem="guP-eg-WwA" firstAttribute="top" secondItem="CRE-sc-oo0" secondAttribute="bottom" constant="42" id="AzV-pw-aru"/>
+                            <constraint firstItem="CRE-sc-oo0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Fs5-Tz-MUY"/>
+                            <constraint firstItem="guP-eg-WwA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hbs-62-kpJ"/>
+                            <constraint firstItem="guP-eg-WwA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lgi-kY-OZK"/>
+                            <constraint firstItem="QZJ-DO-ebF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QF6-LC-dJi"/>
+                            <constraint firstItem="QZJ-DO-ebF" firstAttribute="top" secondItem="guP-eg-WwA" secondAttribute="bottom" constant="34" id="SSG-gy-424"/>
+                            <constraint firstItem="CRE-sc-oo0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cRb-ym-Fc6"/>
+                            <constraint firstItem="j6d-wg-QvG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nJn-bR-xgB"/>
+                            <constraint firstItem="CRE-sc-oo0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rX2-h6-xDW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="forceLabel" destination="QZJ-DO-ebF" id="18o-eA-h8b"/>
+                        <outlet property="setZero" destination="j6d-wg-QvG" id="Fuf-Da-UXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weighter" width="1006" height="1006"/>
+    </resources>
+</document>
